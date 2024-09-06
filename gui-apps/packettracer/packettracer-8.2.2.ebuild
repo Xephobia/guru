@@ -39,5 +39,6 @@ src_install(){
 	for icon in pka pkt pkz; do
 		newicon -s 48x48 -c mimetypes opt/pt/art/${icon}.png application-x-${icon}.png
 	done
+	newmenu "${FILESDIR}/${PN}-${PV}.desktop" "${PN}.desktop"
 	dobin opt/pt/packettracer
 }
